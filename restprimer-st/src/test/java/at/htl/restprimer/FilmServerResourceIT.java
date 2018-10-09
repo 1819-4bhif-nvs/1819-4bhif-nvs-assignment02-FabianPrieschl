@@ -22,7 +22,7 @@ public class FilmServerResourceIT {
     @Before
     public void initClient() {
         this.client = ClientBuilder.newClient();
-        this.tut = this.client.target("http://localhost:8085/restprimer/rs/films");
+        this.tut = this.client.target("http://localhost:8085/restprimer/rs/films"); //Port 8085 since the graphics card is using 8080
     }
 
     @Test
